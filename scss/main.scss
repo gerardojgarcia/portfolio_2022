@@ -58,7 +58,7 @@ main {
 .menu {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 900px;
+    margin-top: 45rem;
     margin-left: 150px;
     z-index: 10;
     position: absolute;
@@ -92,7 +92,7 @@ main {
      isolation: isolate;
     
      width: 100%;
-     height: 90vh;
+     height: 95vh;
      justify-content: center;
     
      
@@ -142,35 +142,38 @@ main {
     flex-flow: column nowrap;
     z-index: 3;
     position: relative;
+    margin-right:5rem; 
     margin-top: 5rem;
     background-color: rgba(255, 255, 255, 0);
     width: auto;
-    max-height: 90vh;
+    height: 90vh;
 
-    svg {
-        background: transparent;
-    }
+   
 
 
 
     #circ1 {
-        margin-left: 100px;
-        background-color: rgba(255, 255, 255, 0);
-        margin-bottom: 25px;
+        margin-left: 15rem;
+
         position: absolute;
-        transform: translateY(-100px);
+        transform: translateY(-125px);
+        height: 900px;
         
     }
 
     #circ2 {
 
         background-color: transparent;
+        position: absolute;
+        height: 900px;
+        transform: translateY(200px);
     }
 
 }
 
 .profile-img {
     z-index: 8;
+    transform: translateX(125px)
 
 }
 
@@ -182,7 +185,7 @@ footer {
     border-top: 2px solid black;
     width: 100%;
     height: 5vh;
-
+    z-index: 25;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
