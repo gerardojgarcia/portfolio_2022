@@ -1,0 +1,177 @@
+:root {
+    background-color: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+   
+    
+    a{
+        text-decoration: none;
+        color: black;
+
+
+        &:hover {
+            font-weight: bold;
+        }
+    }
+}
+
+
+
+body {
+    margin: 0;
+    width: 100%;
+
+}
+
+
+main {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 95vh;
+    width: 100%;
+ 
+    position: relative;
+    
+}
+
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 900px;
+    margin-left: 150px;
+    z-index: 10;
+    position: absolute;
+    
+    
+}
+
+.nav-links {
+    display: flex; 
+    flex-flow: column nowrap;
+    font-size: 1.8rem;
+  
+
+
+
+    
+}
+
+
+/// home Section Style
+/// 
+/// 
+/// 
+/// 
+
+
+.home {
+     display: flex;
+     flex-flow: row nowrap;
+     overflow: hidden;
+     isolation: isolate;
+    
+     width: 100%;
+     height: 90vh;
+     justify-content: center;
+    
+     
+
+}
+
+
+.home-text {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 40%;
+    z-index: 5;
+    margin-left: 200px;
+    margin-top: 5rem;
+
+    h1 {
+        font-size: 3rem;
+
+    }
+
+    strong {
+        font-size: 6rem;
+       
+    }
+
+    p {
+        font-size: 2rem;
+        padding-left: 100px;
+
+      
+
+    }
+
+    ul {
+        padding-left: 110px;
+        list-style: none;
+
+        li {
+            font-size: 1.6rem;
+        }
+    }
+    
+}
+
+.circles {
+    display: flex;
+    flex-flow: column nowrap;
+    z-index: 3;
+    position: relative;
+    margin-top: 5rem;
+    background-color: transparent;
+    width: 50%;
+    height: 100vh;
+
+
+    #circ1 {
+        margin-left: 100px;
+        background-color: transparent;
+        margin-bottom: 25px;
+        
+    }
+
+    #circ2 {
+
+        background-color: transparent;
+    }
+
+}
+
+.profile-img {
+    z-index: 8;
+
+}
+
+
+
+//Footer Style
+
+footer {
+    border-top: 2px solid black;
+    width: 100%;
+    height: 5vh;
+
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+
+
+
+/// Dynamic Classes
+/// 
+/// 
+
+
+.selected {
+    background-color: black;
+
+}
+
