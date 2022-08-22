@@ -104,7 +104,7 @@ main {
 .circles {
   z-index: 3;
   width: auto;
-  max-height: 100vh;
+  max-height: 90vh;
   background-color: #fff0;
   flex-flow: column;
   margin-top: 5rem;
