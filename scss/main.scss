@@ -9,10 +9,12 @@
     a{
         text-decoration: none;
         color: black;
+        transition: color 500ms;
 
 
         &:hover {
-            font-weight: bold;
+
+            color: pink;
         }
     }
 }
@@ -24,6 +26,7 @@ button {
     margin-left: 5px;
     padding: 10px;
     cursor: pointer;
+    transition: all 500ms;
 
     &:hover {
         box-shadow: 5px 5px 0px 2px;
@@ -191,7 +194,130 @@ footer {
     align-items: center;
 }
 
+///Portfolio Sections
+/// 
+/// 
 
+
+.portfolio {
+    width: 100%;
+    height: 95vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h2 {
+    font-size: 5rem;
+    margin-left: 100px;
+
+}
+
+
+.card-box {
+    display: flex;
+    display: column wrap;
+    width: 60%;
+    padding-bottom: 5rem;
+    margin-left: 30%;
+
+    overflow-y: auto;
+
+}
+
+
+.card {
+    border: 2px solid black;
+    min-width: 400px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    
+    padding-bottom: 50px;
+
+    transition: all 500ms;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+
+
+
+
+    img {
+        max-width: 400px;   
+        object-fit: cover;
+
+
+    }
+
+    .title {
+        margin-top: auto;
+        z-index: 2;
+
+    }
+
+    .explore {
+        margin-top: 45vh;
+    }
+
+
+
+    &:hover {
+        box-shadow:   10px 10px 0px 5px;
+    }
+}
+
+
+
+
+///// Experience Sections
+/// 
+/// 
+/// 
+
+
+
+.experience {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+h3 {
+    font-size: 5rem;
+    margin-left: 100px;
+}
+
+
+.experience-box {
+    width: 50%;
+    margin-left: 50px;
+    align-self: flex-end;
+    overflow-y: auto;
+}
+
+
+.exp-card {
+    width: 85%;
+    border: 1px solid black;
+    margin-bottom: 25px;
+    height: 300px;
+
+
+   
+   
+}
+
+.exp-name{
+    font-size: 2rem;
+    padding: 25px;
+} 
 
 
 /// Dynamic Classes
