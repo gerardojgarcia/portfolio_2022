@@ -327,6 +327,7 @@ h2 {
     display: flex;
     height: 100px;
 
+
     width: 15%;
 
     
@@ -337,6 +338,7 @@ button{
 
     font-size: 1.3rem;
     margin-right: 10px;
+    width: 150px;
 
 }
 #port-next {
@@ -356,30 +358,58 @@ button{
     justify-content: center;
     align-items: center;
 
+    isolation: isolate;
     overflow: hidden;
     
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 
     transition: all 500ms;
 
     margin-left: 15px;
     margin-right: 15px;
 
+    object-fit: cover;
+
+    position: relative;
+
 
 
 
 
     img {
-        max-width: 400px;   
+        min-width: 400px;  
+        height: 100%; 
         object-fit: cover;
+        z-index: 0;
+        position: absolute;
+        margin: 0;
+
 
 
     }
 
     .title {
-        margin-top: auto;
-        z-index: 2;
 
+        display: flex;
+        justify-items: center;
+        align-items: center;
+
+
+        z-index: 2;
+        background-color: pink;
+        width: 100%;
+        text-align: left;
+
+
+
+        height: 50px;
+
+        font-size: 1.5rem;
+
+        p {
+            margin-left: 10px;
+        }
+       
     }
 
     .explore {
@@ -390,6 +420,11 @@ button{
 
     &:hover {
         box-shadow:   10px 10px 0px 5px;
+    }
+
+    .explore {
+        margin-bottom: 25px;
+        z-index: 5;
     }
 }
 
@@ -441,6 +476,11 @@ h3 {
     margin-top: 10px;
 
 
+        button {
+            width: 100px;
+        }
+
+
 }
 #exp-up {
     padding-left: 10px;
@@ -452,6 +492,8 @@ h3 {
 
 .experience-box {
     width: 70%;
+
+    margin-left: 15px;
 
         display: flex;
         flex-flow: column nowrap;
@@ -478,6 +520,10 @@ h3 {
     transform: translateX(-5px) translateY(-5px);
     border: 2px solid black;
    }
+}
+
+.explore {
+    width: auto;
 }
 
 .exp-name{
