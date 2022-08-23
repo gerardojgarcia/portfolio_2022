@@ -32,9 +32,12 @@ homeBtn.addEventListener("click", function(){
     
 
 
+       
+        homeEl.classList.toggle("hidden")
 
 
-    homeEl.classList.toggle('hidden')
+
+    
 
 
     portEl.classList.add('hidden')
