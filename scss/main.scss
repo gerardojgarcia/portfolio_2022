@@ -4,6 +4,7 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
+    scroll-behavior: smooth;    
    
     
     a{
@@ -67,6 +68,10 @@ main {
     margin-left: 150px;
     z-index: 10;
     position: absolute;
+
+    @media screen and (max-width: 2440px){
+        margin-top: 50rem;
+    }
     
     
 }
@@ -161,6 +166,11 @@ main {
         }
     }
     
+
+    @media screen and (max-width: 2440px){
+        margin-top: 1rem;
+        margin-left: 250px;
+    }
 }
 
 .circles {
@@ -254,6 +264,11 @@ footer {
     }
 }
 
+.footer-btn {
+    margin-left: 15rem;
+    font-size: 1rem;
+}
+
 ///Portfolio Sections
 /// 
 /// 
@@ -281,14 +296,53 @@ h2 {
 }
 
 
+.portfolio-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+
 .card-box {
     display: flex;
     display: column wrap;
     width: 60%;
     padding-bottom: 5rem;
-    margin-left: 30%;
+
 
     overflow-y: auto;
+    scroll-behavior: smooth;
+
+
+
+    
+
+    
+
+}
+
+.portfolio-btns {
+    margin-top: auto;
+    margin-left: 400px;
+    display: flex;
+    height: 100px;
+
+    width: 15%;
+
+    
+
+
+}
+button{
+
+    font-size: 1.3rem;
+    margin-right: 10px;
+
+}
+#port-next {
+    padding-left: 10px;
+    padding-right: 10px;
+
 
 }
 
@@ -360,6 +414,12 @@ h2 {
 
     transform: translateX(-5100px);
     flex-shrink: 0;
+
+    scroll-behavior: smooth;
+
+    @media screen and (max-width: 2440px){
+        transform: translateX(-3850px);
+    }
 }
 
 h3 {
@@ -368,26 +428,53 @@ h3 {
 }
 
 
+.experience-container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%
+}
+
+
+.experience-btns {
+    width: 20%;
+    margin-left: 350px;
+    margin-top: 10px;
+
+
+}
+#exp-up {
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+
+
 .experience-box {
-    width: 50%;
-    margin-left: 50px;
+    width: 70%;
+
+        display: flex;
+        flex-flow: column nowrap;
     align-self: flex-end;
     overflow-y: auto;
+    scroll-behavior: smooth;
 }
 
 
 .exp-card {
-    width: 85%;
+    width: 80%;
     border: 2px solid black;
-    margin: 25px;
-    height: 300px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    min-height: 400px;
+    margin-left: 20px;
 
     transition:all 300ms;
 
 
    
    &:hover {
-    box-shadow: 5px 5px 0px 2px;
+    box-shadow: 8px 8px 0px 2px;
     transform: translateX(-5px) translateY(-5px);
     border: 2px solid black;
    }
