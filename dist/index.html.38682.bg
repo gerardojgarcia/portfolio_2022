@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.574c7455.css">
+    <title> Gerardo Garcia: Frontend Developer</title>
+</head>
+<body>
+
+   
+   <main>
+    <section class="menu">
+        <div class="nav-links">
+
+            <a href="#" id="home-btn">Home</a>
+            <a href="#" id="port-btn">Portfolio</a>
+            <a href="#" id="exp-btn">Experience</a>
+            <a href="#" id="contact-btn">Contact</a>
+
+
+
+
+
+        </div>
+
+
+       
+
+
+
+    </section>
+    <section id="home" class="home ">
+
+        <div class="home-text">
+            <h1>I'm Gerardo</h1>
+            <strong>Frontend Developer</strong>
+
+
+            <p>I specialize in: 
+                </p><ul>
+                    
+                    <li>HTML5</li>
+                <li>SCSS/SASS</li>
+                <li>Javascript</li>
+                <li>TailwindCSS</li>
+                <li>VueJs</li>
+                <li>Laravel</li>   
+            
+            
+            
+                </ul>
+            <p></p>
+        </div>
+
+
+        <div class="circles">
+           <!--<img src="/imgs/black_circle.png" alt="" id="circ1"> --> 
+            <div class="circ1"></div>
+            <div class="circ2"></div>
+
+        </div>
+        <div class="profile-img"><img src="/profile_photo.e16aef3b.png" alt="Profile Image of Gerardo Garcia"></div>
+    </section>
+
+
+    <section id="portfolio" class="portfolio hidden">
+        <h2>Portfolio</h2>
+
+
+        <div class="portfolio-container">
+            <div class="portfolio-btns">
+                <button id="port-back">Backward</button>
+                <button id="port-next">Forward</button>
+            
+            </div>
+            <div id="portfolio-box" class="card-box">
+            
+                <div class="card">
+                    <img src="/smartphone_mockup.1c03e7bb.png" alt="Image of website">
+                    <div class="title"><p>Oranges&Lemons</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="/elacompost_desktop_mockup.93e46f26.png" alt="Image of website">
+                    <div class="title"><p>ELACompost</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="/website_desktop_mockup_verified.7d10e9a4.png" alt="Image of website">
+                    <div class="title"><p>Verified Transport</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Image of website">
+                    <div class="title"><p>TaxBuddy</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Image of website">
+                    <div class="title"><p>Monarch Construction</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+                <div class="card">
+                    <img src="#" alt="Image of website">
+                    <div class="title"><p>ObjetGrafik</p></div>
+                    <button class="explore">Explore</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="experience" class="experience hidden">
+            <h3>Experience</h3>
+
+
+
+                <div class="experience-btns">
+                    <button id="exp-up">Up</button>
+                    <button id="exp-down">Down</button>
+                
+                </div>
+                <div id="experience-box" class="experience-box">
+                        <div class="exp-card">
+                            
+                
+                            <strong class="exp-name">
+                                snap-studio!!
+                            </strong>
+                            <p class="exp-date">2016-2020</p>
+                            <div class="exp-descr">
+                                <p class="exp-challenge">Challenge: </p>
+                                <p class="exp-action">Actions:</p>
+                                <p class="exp-results">Results:</p>
+                            </div>
+                        </div>
+                        <div class="exp-card">
+                
+                            <strong class="exp-name">
+                                Oranges&Lemons
+                            </strong>
+                            <p class="exp-date">2016-2020</p>
+                            <div class="exp-descr">
+                                <p class="exp-challenge">Challenge: </p>
+                                <p class="exp-action">Actions:</p>
+                                <p class="exp-results">Results:</p>
+                            </div>
+                        </div>
+                        <div class="exp-card">
+                
+                            <strong class="exp-name">
+                                Oranges&Lemons
+                            </strong>
+                            <p class="exp-date">2016-2020</p>
+                            <div class="exp-descr">
+                                <p class="exp-challenge">Challenge: </p>
+                                <p class="exp-action">Actions:</p>
+                                <p class="exp-results">Results:</p>
+                            </div>
+                        </div>
+                        <div class="exp-card">
+                
+                            <strong class="exp-name">
+                                Oranges&Lemons
+                            </strong>
+                            <p class="exp-date">2016-2020</p>
+                            <div class="exp-descr">
+                                <p class="exp-challenge">Challenge: </p>
+                                <p class="exp-action">Actions:</p>
+                                <p class="exp-results">Results:</p>
+                            </div>
+                        </div>
+                        <div class="exp-card">
+                
+                            <strong class="exp-name">
+                                Oranges&Lemons
+                            </strong>
+                            <p class="exp-date">2016-2020</p>
+                            <div class="exp-descr">
+                                <p class="exp-challenge">Challenge: </p>
+                                <p class="exp-action">Actions:</p>
+                                <p class="exp-results">Results:</p>
+                            </div>
+                        </div>
+                </div>
+
+
+
+
+
+
+
+    </section>
+</main>
+   <footer>
+    <div class="footer-links">
+        <a href="https://github.com/gerardojgarcia">Github: gerardojgarcia</a>
+        <a href="https://www.youtube.com/channel/UCgtSWH8wYSDg9wn3-J2dYoA/videos">Youtube: CodewithG</a>
+        <a href="https://github.com/gerardojgarcia">LinkedIn: gerardojgarcia</a>
+        
+    </div>
+
+    <button class="footer-btn">Contact</button>
+    <div class="contact-modal hidden">
+        <form action="submit">
+            <label for="name">Enter your name</label>
+            <input type="text" name="name" id="name" required="">
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" required="">
+
+
+
+        </form>
+    </div>
+    <img src="/logo.c5dd6f41.png" alt="" class="footer-logo">
+   </footer>
+   <script src="/index.d4fd755d.js"></script>
+<script src="/portfolio_2022.3464ddca.js"></script></body>
+</html>
