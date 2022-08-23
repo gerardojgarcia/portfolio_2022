@@ -99,7 +99,7 @@ main {
 }
 
 .home-text {
-  width: 50%;
+  width: 48%;
   z-index: 7;
   flex-flow: column;
   margin-top: 10rem;
@@ -139,7 +139,6 @@ main {
 
 .circles {
   z-index: 3;
-  width: auto;
   height: 90vh;
   background-color: #fff0;
   flex-flow: column;
@@ -149,35 +148,45 @@ main {
   position: relative;
 }
 
-.circles #circ1 {
+.circles .circ1 {
   height: 900px;
+  width: 900px;
+  background-color: #fdd4db;
+  border-radius: 50vh;
+  margin-left: 100px;
   position: absolute;
-  transform: translateY(-300px)translateX(100px);
+  transform: translateY(-300px);
+  box-shadow: 2px 5px 2px 2px #0000001a;
 }
 
-.circles #circ2 {
+.circles .circ2 {
   height: 900px;
-  background-color: #0000;
+  width: 900px;
+  background-color: #000;
+  border-radius: 50vh;
   position: absolute;
-  transform: translateY(500px)translateX(-100px);
+  transform: translateY(500px)translateX(-200px);
 }
 
 .profile-img {
   z-index: 8;
-  height: 800px;
-  width: 800px;
-  object-fit: contain;
+  height: 650px;
+  width: 650px;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #000;
   border-radius: 50vh;
   justify-content: center;
   align-self: center;
   align-items: center;
+  margin-right: 50px;
   display: flex;
-  transform: translateX(-50px);
+  overflow: hidden;
 }
 
 .profile-img img {
-  width: 600px;
-  height: 600px;
+  width: 75%;
+  transform: translateY(75px)translateX(50px);
 }
 
 footer {
@@ -204,6 +213,12 @@ footer {
 .footer-btn {
   margin-left: 15rem;
   font-size: 1rem;
+}
+
+.footer-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 25px;
 }
 
 .portfolio {
