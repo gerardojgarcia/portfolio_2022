@@ -311,7 +311,7 @@ h2 {
 
 .portfolio-container {
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     width: 100%;
 }
 
@@ -319,12 +319,19 @@ h2 {
 .card-box {
     display: flex;
     display: column wrap;
-    width: 60%;
-    padding-bottom: 5rem;
+    width: 85%;
+    
+     
 
+    justify-items: center;
+    align-content: center;
+
+    align-self: flex-end;
 
     overflow-y: auto;
     scroll-behavior: smooth;
+
+    //box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.299);
 
 
 
@@ -335,13 +342,14 @@ h2 {
 }
 
 .portfolio-btns {
-    margin-top: auto;
-    margin-left: 400px;
+    margin-top: 25px;
+    
     display: flex;
     height: 100px;
 
 
-    width: 15%;
+    align-self: flex-end;
+    width: 25%;
 
     
 
@@ -374,7 +382,8 @@ button{
     isolation: isolate;
     overflow: hidden;
     
-    margin-bottom: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 
     transition: all 500ms;
 
