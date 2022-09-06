@@ -73,6 +73,8 @@ main {
 }
 
 .nav-links a {
+  background-color: #fff;
+  margin-bottom: 5px;
   padding: 5px;
   transition: all .3s;
 }
