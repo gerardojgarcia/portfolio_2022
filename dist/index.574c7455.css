@@ -51,9 +51,9 @@ main {
 }
 
 .menu {
-  z-index: 10;
+  z-index: 99;
   flex-flow: column;
-  margin-top: 60rem;
+  margin-top: 55rem;
   margin-left: 150px;
   display: flex;
   position: absolute;
@@ -316,16 +316,23 @@ button {
 }
 
 .card .explore {
+  z-index: 5;
+  background-color: #fff;
   margin-top: 45vh;
+  margin-bottom: 25px;
+  padding: 10px;
+  transition: all .5s;
+}
+
+.card .explore:hover {
+  color: #000;
+  cursor: pointer;
+  translate: -5px -5px;
+  box-shadow: 5px 5px 0 2px;
 }
 
 .card:hover {
   box-shadow: 10px 10px 0 5px;
-}
-
-.card .explore {
-  z-index: 5;
-  margin-bottom: 25px;
 }
 
 .experience {
@@ -336,7 +343,7 @@ button {
   flex-shrink: 0;
   transition: all .5s;
   display: flex;
-  transform: translateX(-5100px);
+  transform: translateX(-5120px);
 }
 
 @media screen and (max-width: 2440px) {
@@ -358,8 +365,8 @@ h3 {
 
 .experience-btns {
   width: 20%;
-  margin-top: 10px;
-  margin-left: 350px;
+  padding-left: 350px;
+  translate: 5vh 65vh;
 }
 
 .experience-btns button {

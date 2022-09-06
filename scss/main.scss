@@ -64,9 +64,9 @@ main {
 .menu {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 60rem;
+    margin-top: 55rem;
     margin-left: 150px;
-    z-index: 10;
+    z-index: 99;
     position: absolute;
 
     @media screen and (max-width: 2440px){
@@ -437,18 +437,30 @@ button{
 
     .explore {
         margin-top: 45vh;
+        margin-bottom: 25px;
+        z-index: 5;
+        background-color: white;
+        padding: 10px;
+        transition: all 500ms;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
+            box-shadow:   5px 5px 0px 2px;
+            translate: -5px -5px;
+
+
+        }
     }
 
 
 
     &:hover {
         box-shadow:   10px 10px 0px 5px;
+        
     }
 
-    .explore {
-        margin-bottom: 25px;
-        z-index: 5;
-    }
+   
 }
 
 
@@ -470,7 +482,7 @@ button{
 
     transition: all 500ms;
 
-    transform: translateX(-5100px);
+    transform: translateX(-5120px);
     flex-shrink: 0;
 
     scroll-behavior: smooth;
@@ -495,9 +507,9 @@ h3 {
 
 .experience-btns {
     width: 20%;
-    margin-left: 350px;
-    margin-top: 10px;
-
+    padding-left: 350px;
+    translate: 5vh 65vh;
+    
 
         button {
             width: 100px;
@@ -523,6 +535,7 @@ h3 {
     align-self: flex-end;
     overflow-y: auto;
     scroll-behavior: smooth;
+    
 }
 
 
