@@ -71,6 +71,7 @@ expBtn.addEventListener("click", function(){
     
 
    expEl.classList.toggle('hidden')
+   // expEl.classList.toggle('transform')
 
     
 
@@ -121,4 +122,24 @@ upBtn.addEventListener("click", function(){
 
 downBtn.addEventListener("click", function() {
     expBox.scrollTop += 500
+})
+
+
+
+/// footer contact form
+
+
+
+const footerBtn = document.getElementById('footer-btn')
+
+
+footerBtn.addEventListener('click', ()=> {
+
+    const footerContactEl = document.getElementById('contact-modal')
+
+
+
+    footerContactEl.classList.toggle('hidden')
+    footerContactEl.classList.toggle('display')
+    console.log('i was clicked')
 })

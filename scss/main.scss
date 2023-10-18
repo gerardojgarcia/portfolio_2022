@@ -4,9 +4,9 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 auto;
     box-sizing: border-box;
-    scroll-behavior: smooth;    
-   
-    
+    scroll-behavior: smooth;
+
+
     a{
         text-decoration: none;
         color: black;
@@ -32,7 +32,7 @@ button {
     &:hover {
         box-shadow: 5px 5px 0px 2px;
         transform: translateX(-5px) translateY(-5px);
-        
+
     }
 
     &:focus {
@@ -45,7 +45,11 @@ button {
 
 body {
     margin: 0;
-    width: 100%;
+
+    overflow: hidden;
+
+    margin: auto;
+    border: 2px solid black;
 
 }
 
@@ -54,34 +58,36 @@ main {
     display: flex;
     flex-flow: row nowrap;
     height: 95vh;
-    width: 100%;
- 
     position: relative;
     overflow: hidden;
-    
+
 }
 
 .menu {
     display: flex;
     flex-flow: column nowrap;
-    margin-top: 55rem;
+    margin-top: 58rem;
     margin-left: 150px;
     z-index: 99;
     position: absolute;
 
-    @media screen and (max-width: 2440px){
-        margin-top: 50rem;
+
+
+    @media screen and (min-width: 1100px){
+        margin-top: 58vh;
+        margin-left: 2.5rem;
     }
-    
-    
+
+
+
 }
 
 .nav-links {
-    display: flex; 
+    display: flex;
     flex-flow: column nowrap;
     font-size: 1.8rem;
     font-weight: bold;
-  
+
 
     a{
         transition: all 300ms;
@@ -98,15 +104,15 @@ main {
         }
     }
 
-    
+
 }
 
 
 /// home Section Style
-/// 
-/// 
-/// 
-/// 
+///
+///
+///
+///
 
 
 .home {
@@ -125,8 +131,8 @@ main {
      opacity: 1;
 
      transition: all 500ms;
-    
-     
+
+
 
 }
 
@@ -147,14 +153,14 @@ main {
     strong {
         font-size: 6rem;
         margin-left: 100px;
-       
+
     }
 
     p {
         font-size: 2.3rem;
         margin-left: 150px;
 
-      
+
 
     }
 
@@ -166,7 +172,7 @@ main {
             font-size: 2rem;
         }
     }
-    
+
 
     @media screen and (max-width: 2440px){
         margin-top: 1rem;
@@ -179,19 +185,19 @@ main {
     flex-flow: column nowrap;
     z-index: 3;
     position: relative;
-    margin-right:5rem; 
+    margin-right:5rem;
     margin-top: 5rem;
     background-color: rgba(255, 255, 255, 0);
 
     height: 90vh;
 
 
-   
+
     .circ1 {
         height: 900px;
         width: 900px;
         border-radius: 50vh;
-        
+
         background-color: rgb(253, 212, 219);
         position: absolute;
         margin-left: 100px;
@@ -205,12 +211,12 @@ main {
         height: 900px;
         width: 900px;
         border-radius: 50vh;
-       
+
         transform: translateY(500px) translateX(-200px);
     }
 
 
-   
+
 
 }
 
@@ -219,13 +225,13 @@ main {
    // transform: translateX(-50px) translateY(50px);
     height: 650px;
     width: 650px;
-    margin-right: 50px;    
+    margin-right: 50px;
 
     overflow:hidden;
 
     display: flex;
 
-    
+
     object-fit: cover;
     object-position: center;
     align-self: center;
@@ -239,9 +245,21 @@ main {
 
     img {
 
-        width: 75%;
+        width: 85%;
         transform:  translateY(75px) translateX(50px);
-       
+
+    }
+
+    @media screen and (max-width: 1920px) {
+        height: 375px;
+        width: 375px;
+
+        img {
+
+            width: 75%;
+            transform:  translateY(50px) translateX(20px);
+
+        }
     }
 
 }
@@ -258,6 +276,11 @@ footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+
+
+
+    isolation: isolate;
+    position: relative;
 }
 
 .footer-links {
@@ -274,6 +297,11 @@ footer {
 .footer-btn {
     margin-left: 15rem;
     font-size: 1rem;
+
+    @media screen and (min-width: 1100px) {
+        margin-left: 2rem;
+        padding: .5rem;
+    }
 }
 
 
@@ -283,9 +311,69 @@ footer {
     margin-right: 25px;
 }
 
+.contact-modal {
+    display: flex;
+    flex-flow: column nowrap;
+
+
+    min-width: 400px;
+    min-height: 200px;
+    margin-left: 1250px;
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+   z-index: 10;
+   position: absolute;
+
+    //transform: translateX(-350px)  translateY(150px);
+
+    transition: all 300ms ease-out;
+
+    box-shadow: 10px 10px 0px 2px rgb(0, 0, 0);
+
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        margin: 1rem;
+
+        input {
+            width: 250px;
+            padding: .5rem;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+
+
+
+}
+
+
+.radio-container {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.radio1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.radio2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.checkbox {
+    color:rgb(253, 212, 219);
+}
+
 ///Portfolio Sections
-/// 
-/// 
+///
+///
 
 
 .portfolio {
@@ -304,8 +392,9 @@ footer {
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin-left: 100px;
+    padding: 0px;
 
 }
 
@@ -319,10 +408,10 @@ h2 {
 
 .card-box {
     display: flex;
-    display: column wrap;
+    flex-flow: row nowrap;
     width: 85%;
-    
-     
+
+
 
     justify-items: center;
     align-content: center;
@@ -335,16 +424,18 @@ h2 {
     //box-shadow: inset 0px 0px 5px 5px  rgba(0, 0, 0, 0.299);
 
 
+@media screen and (min-width:1100px) {
 
-    
+}
 
-    
+
+
 
 }
 
 .portfolio-btns {
-    margin-top: 25px;
-    
+    margin-top: 15px;
+
     display: flex;
     height: 100px;
 
@@ -352,7 +443,7 @@ h2 {
     align-self: flex-end;
     width: 25%;
 
-    
+
 
 
 }
@@ -374,7 +465,7 @@ button{
 .card {
     border: 2px solid black;
     min-width: 400px;
-    
+
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -382,14 +473,10 @@ button{
 
     isolation: isolate;
     overflow: hidden;
-    
-    margin-top: 15px;
-    margin-bottom: 15px;
 
     transition: all 500ms;
 
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 15px;
 
     object-fit: cover;
 
@@ -400,8 +487,8 @@ button{
 
 
     img {
-        min-width: 400px;  
-        height: 100%; 
+        min-width: 400px;
+        height: 100%;
         object-fit: cover;
         z-index: 0;
         position: absolute;
@@ -432,7 +519,7 @@ button{
         p {
             margin-left: 10px;
         }
-       
+
     }
 
     .explore {
@@ -457,19 +544,19 @@ button{
 
     &:hover {
         box-shadow:   10px 10px 0px 5px;
-        
+
     }
 
-   
+
 }
 
 
 
 
 ///// Experience Sections
-/// 
-/// 
-/// 
+///
+///
+///
 
 
 
@@ -481,15 +568,22 @@ button{
     visibility: visible;
 
     transition: all 500ms;
+    transform: translateX(-3750px);
 
-    transform: translateX(-5120px);
     flex-shrink: 0;
 
     scroll-behavior: smooth;
 
-    @media screen and (max-width: 2440px){
-        transform: translateX(-3850px);
-    }
+
+
+
+
+
+
+
+
+
+
 }
 
 h3 {
@@ -507,13 +601,18 @@ h3 {
 
 .experience-btns {
     width: 20%;
-    padding-left: 350px;
-    translate: 5vh 65vh;
-    
+    padding-left: 250px;
+    translate: 5vh 55vh;
+
 
         button {
             width: 100px;
         }
+
+
+
+
+
 
 
 }
@@ -535,7 +634,7 @@ h3 {
     align-self: flex-end;
     overflow-y: auto;
     scroll-behavior: smooth;
-    
+
 }
 
 
@@ -549,8 +648,10 @@ h3 {
 
     transition:all 300ms;
 
+p   {
+    width: 100%;
+}
 
-   
    &:hover {
     box-shadow: 8px 8px 0px 2px;
     transform: translateX(-5px) translateY(-5px);
@@ -565,7 +666,7 @@ h3 {
 .exp-name{
     font-size: 2rem;
     padding: 25px;
-} 
+}
 
 .exp-date {
     font-size: 1.7rem;
@@ -575,7 +676,7 @@ h3 {
 
 .exp-descr {
     margin-left: 60px;
-    width: 50%;
+    width: 90%;
 }
 
 
@@ -583,9 +684,9 @@ h3 {
 
 
 
-/// Dynamic Classes
-/// 
-/// 
+/// Utility Classes
+///
+///
 
 
 .selected {
@@ -596,7 +697,7 @@ h3 {
 .hidden {
    visibility: hidden;
     opacity: 0;
-    
+
 
 }
 
@@ -605,3 +706,15 @@ h3 {
     transform: translateX(-1000px)
 }
 
+.display {
+
+    transform:   translateY(-175px);
+
+
+
+}
+
+.span {
+
+    font-weight: bold;
+}

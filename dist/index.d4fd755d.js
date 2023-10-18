@@ -28,6 +28,7 @@ portBtn.addEventListener("click", function() {
 });
 expBtn.addEventListener("click", function() {
     expEl.classList.toggle("hidden");
+    // expEl.classList.toggle('transform')
     portEl.classList.add("hidden");
     homeEl.classList.add("hidden");
 });
@@ -46,6 +47,14 @@ upBtn.addEventListener("click", function() {
 });
 downBtn.addEventListener("click", function() {
     expBox.scrollTop += 500;
+});
+/// footer contact form
+const footerBtn = document.getElementById("footer-btn");
+footerBtn.addEventListener("click", ()=>{
+    const footerContactEl = document.getElementById("contact-modal");
+    footerContactEl.classList.toggle("hidden");
+    footerContactEl.classList.toggle("display");
+    console.log("i was clicked");
 });
 
 //# sourceMappingURL=index.d4fd755d.js.map
