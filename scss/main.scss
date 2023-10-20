@@ -222,9 +222,9 @@ main {
 
 .profile-img {
     z-index: 8;
-   // transform: translateX(-50px) translateY(50px);
-    height: 650px;
-    width: 650px;
+    transform: translateX(-50px) translateY(50px);
+    height: 850px;
+    width: 850px;
     margin-right: 50px;
 
     overflow:hidden;
@@ -245,19 +245,20 @@ main {
 
     img {
 
-        width: 85%;
-        transform:  translateY(75px) translateX(50px);
+
+        \\transform:  translateY(25px) translateX(25px);
 
     }
 
     @media screen and (max-width: 1920px) {
-        height: 375px;
-        width: 375px;
+        height: 475px;
+        width: 475px;
+
 
         img {
 
-            width: 75%;
-            transform:  translateY(50px) translateX(20px);
+            width: 100%;
+            transform:  translateY(50px) ;
 
         }
     }
